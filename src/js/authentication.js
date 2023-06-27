@@ -22,13 +22,14 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBwj1joeH7cezMQGrV_588ARC2goYFAeHk',
-  authDomain: 'book-e1fb3.firebaseapp.com',
-  projectId: 'book-e1fb3',
-  storageBucket: 'book-e1fb3.appspot.com',
-  messagingSenderId: '701181474870',
-  appId: '1:701181474870:web:8861dfbbd1f6265a608097',
-  measurementId: 'G-1S54659S3E',
+  apiKey: 'AIzaSyBlGV3K7Sw7xSQRedD7xSUVb8ZeXIlohPE',
+  authDomain: 'project-bookshelf-42f20.firebaseapp.com',
+  databaseURL:
+    'https://project-bookshelf-42f20-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'project-bookshelf-42f20',
+  storageBucket: 'project-bookshelf-42f20.appspot.com',
+  messagingSenderId: '182637264257',
+  appId: '1:182637264257:web:101b116e14ac8fa2a8bc80',
 };
 
 initializeApp(firebaseConfig);
