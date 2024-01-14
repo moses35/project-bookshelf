@@ -227,7 +227,7 @@ async function getBook() {
         //console.log(snapshot.val());
         res = [...Object.values(snapshot.val())];
       } else {
-        console.log('No data available');
+        //console.log('No data available');
       }
     })
     .catch(error => {
@@ -331,7 +331,7 @@ function modalLoginFunc(email, password) {
   if (email && password) {
     signIn(email, password)
       .then(userCredential => {
-        console.log(userCredential);
+        //console.log(userCredential);
         userId = userCredential.user.uid;
 
         localStorage.setItem('uid', userId);
