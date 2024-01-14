@@ -92,7 +92,7 @@ onAuthStateChanged(auth, user => {
     // localStorage.removeItem('user-name');
     LOGIN = false;
     loginFunc(null);
-    console.log('User signed out');
+    //console.log('User signed out');
   }
 });
 
@@ -372,7 +372,7 @@ export { postBook, deleteBook, getBook, openSignUpFunc };
 
 const iconPass = document.querySelector('.k-modal__icon[alt="lock"]');
 const inputPass = document.querySelector('.k-modal__input[name="password"]');
-console.dir(inputPass);
+//console.dir(inputPass);
 
 iconPass.addEventListener('click', onClickIconPass);
 
