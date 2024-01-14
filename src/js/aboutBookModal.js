@@ -40,7 +40,7 @@ async function openModal(e) {
     bodyEl.classList.add('modal-open');
 
     const bookMarkup = await fetchSearchResult(bookId);
-    console.log(bookMarkup.buy_links);
+    //console.log(bookMarkup.buy_links);
     bookContainer.insertAdjacentHTML('beforeend', createBookMarup(bookMarkup));
 
     const varGetBook = await getBook();

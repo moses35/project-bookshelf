@@ -85,7 +85,7 @@ onAuthStateChanged(auth, user => {
   if (user) {
     userId = user.uid;
     localStorage.setItem('uid', userId);
-    console.log('User signed in:', user);
+    //console.log('User signed in:', user);
     loginFunc(user.emailVerified);
   } else {
     localStorage.removeItem('uid');
@@ -224,7 +224,7 @@ async function getBook() {
   await get(child(ref(getDatabase()), `users/${userId}`))
     .then(snapshot => {
       if (snapshot.exists()) {
-        console.log(snapshot.val());
+        //console.log(snapshot.val());
         res = [...Object.values(snapshot.val())];
       } else {
         console.log('No data available');
